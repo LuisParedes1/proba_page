@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Video 1.3 - Probabilidad y Estadisticas</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/katex/katex.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">Probabilidad y Estadisticas</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Video 1.3</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1661423851314"
+                  >2022-08-25 07:37</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1661448108139"
+                  >2022-08-25 14:21</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p><a title="https://www.youtube.com/watch?v=EHwTEqwgYtE" href="https://www.youtube.com/watch?v=EHwTEqwgYtE">Video 1.3</a></p>
+<nav class="table-of-contents"><ul><li><a href="#regla-del-producto">Regla del producto</a></li><li><a href="#permutaciones">Permutaciones</a><ul><li><a href="#ejemplo">Ejemplo</a></li></ul></li><li><a href="#variaciones">Variaciones</a></li><li><a href="#combinaciones">Combinaciones</a><ul><li><a href="#ejemplos">Ejemplos</a></li></ul></li><li><a href="#diferencia-entre-combinacion-y-variacion">Diferencia entre combinacion y variacion</a></li><li><a href="#anagramas-min-3246">Anagramas (min 32:46)</a></li><li><a href="#permutaciones-con-elementos-repetidos">Permutaciones con elementos repetidos</a></li><li><a href="#metodo-de-bolas-y-urnas-4045">Metodo de Bolas y Urnas (40:45)</a><ul><li><a href="#ejemplo-1">Ejemplo</a></li></ul></li></ul></nav><p><img src="/_resources/db695bab650b48eda6b56a8960387354.png" /></p>
+<p><img src="/_resources/a1e9fbf04dbc4a02ba51e807ed1ccd48.png" /></p>
+<h1 id="regla-del-producto">Regla del producto</h1>
+<p><img src="/_resources/17b126e8fe46470e9796ae347daac631.png" /></p>
+<blockquote>
+<p>La regla del producto es la que me permite entender todas las cuentas que quiera hacer</p>
+</blockquote>
+<p><img src="/_resources/76a0b5d9389246028bd51b11ca9a4856.png" /></p>
+<blockquote>
+<p>En las patentes la letra ñ no entra, asi que hay 26 letras del abecedario que podemos usar.</p>
+</blockquote>
+<h1 id="permutaciones">Permutaciones</h1>
+<p><img src="/_resources/4d2497cafd1f44a3902a627848bfc094.png" /></p>
+<p>Me interesa hallar todas las formas distintas de <strong>ordenar</strong> <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em"></span><span class="mord mathnormal">n</span></span></span></span></span> elementos.</p>
+<p>En el ejemplo de los libros, hay <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">5!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em"></span><span class="mord">5</span><span class="mclose">!</span></span></span></span></span> formas de reordenarlos.</p>
+<p><img src="/_resources/e802104066d44cbebbc1d01426028b89.png" /></p>
+<h2 id="ejemplo">Ejemplo</h2>
+<p>Que pasaria si en el estante solamente tengo lugar para 3 libros? (sigo teniendo 5 libros)</p>
+<p><img src="/_resources/9b9e1087fb6e45ed9d5a95061d25dccf.png" /></p>
+<p>Antes buscamos todos los ordenamientos posibles de un conjunto de elementos (<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">5!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em"></span><span class="mord">5</span><span class="mclose">!</span></span></span></span></span>) y ahora buscamos todos los ordenamientos posibles de un <strong>subconjunto</strong> de elementos.</p>
+<p><img src="/_resources/79acd1d7475745fab60b870265d74aa2.png" /></p>
+<p>Con esta nueva formula expreso</p>
+<div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mn>5</mn><mo stretchy="false">!</mo></mrow><mrow><mn>2</mn><mo stretchy="false">!</mo></mrow></mfrac><mo>=</mo><mfrac><mtext>todos los ordenamientos de libros</mtext><mtext>ordenamiento de libros que deje afuera</mtext></mfrac></mrow><annotation encoding="application/x-tex">\frac{5!}{2!} = \frac{\textrm{todos los ordenamientos de libros}}{\textrm{ordenamiento de libros que deje afuera}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em"><span style="top:-2.314em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord">2</span><span class="mclose">!</span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord">5</span><span class="mclose">!</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em"><span style="top:-2.314em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord text"><span class="mord textrm">ordenamiento de libros que deje afuera</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord text"><span class="mord textrm">todos los ordenamientos de libros</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+<blockquote>
+<p>Este es un caso de variaciones. Estamos ordenante 3 libros a partir de un conjunto de 5 libros.</p>
+</blockquote>
+<h1 id="variaciones">Variaciones</h1>
+<p><img src="/_resources/b61bebceb1eb42798360211026428d37.png" /></p>
+<h1 id="combinaciones">Combinaciones</h1>
+<p><img src="/_resources/be9b3f363999430c9d8e30239f6b561f.png" /></p>
+<p><img src="/_resources/db717f51292e4a1b80fb62270c46264f.png" /></p>
+<h2 id="ejemplos">Ejemplos</h2>
+<p><img src="/_resources/1f39888a712348ff9809dd1d11cccff1.png" /></p>
+<blockquote>
+<p>El orden no me importa porque el equipo tiene 11 jugadores diferentes y no importa el orden en que los elija.</p>
+</blockquote>
+<p><img src="/_resources/7ae182869b29495995eaff0d1fa1d2a3.png" /></p>
+<blockquote>
+<p>El orden no me importa porque cuando hago  un control de calidad reviso todas las piezas y no hace diferencia el orden que las haya sacado</p>
+</blockquote>
+<p><img src="/_resources/27aed5a21a754bcf96003e482061cce8.png" /></p>
+<p><img src="/_resources/931091463d6647f8afed42b782011cc9.png" /></p>
+<p><img src="/_resources/6b55435c76224468b402f4b470980b70.png" /></p>
+<h1 id="diferencia-entre-combinacion-y-variacion">Diferencia entre combinacion y variacion</h1>
+<blockquote>
+<p>Si no me importa el orden de los elementos, uso combinacion.
+En caso de el que el orden de los elementos si importa, uso variacion.</p>
+</blockquote>
+<h1 id="anagramas-min-3246">Anagramas (min 32:46)</h1>
+<p>Pienso en una palabra y trata de hallar todas las posibles palabras posibles cambiando las letras de lugar (la palabra no tiene que ser existente, alcanza con que las letras cambien de lugar)</p>
+<p><img src="/_resources/94c021868110434f8a8cd956a0a83f83.png" /></p>
+<p><img src="/_resources/824509c865bb4623972018ead703897e.png" /></p>
+<h1 id="permutaciones-con-elementos-repetidos">Permutaciones con elementos repetidos</h1>
+<p><img src="/_resources/dded9756aef34814b7cce1a3075d7dec.png" /></p>
+<h1 id="metodo-de-bolas-y-urnas-4045">Metodo de Bolas y Urnas (40:45)</h1>
+<p><img src="/_resources/dca76f06b53245cc8fc9ce1a24846a2e.png" /></p>
+<p><img src="/_resources/d743d2408aff4b60ad5ec7e990b01535.png" /></p>
+<p><img src="/_resources/c4b2b534d70f4e39b8df561317b1d6c6.png" /></p>
+<p><img src="/_resources/34e3428dc2ec411eb9f66c5ec727c805.png" /></p>
+<blockquote>
+<p>Las bolas deben ser <strong>indistinguibles</strong> para poder usar el anagrama.</p>
+</blockquote>
+<p><img src="/_resources/9cddd294b36544828239d93a7e32c994.png" /></p>
+<blockquote>
+<p>Siempre utilizo <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em"></span><span class="mord mathnormal" style="margin-right:0.02778em">r</span></span></span></span></span> bolas y <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span><span class="mspace" style="margin-right:0.2222222222222222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em"></span><span class="mord">1</span></span></span></span></span> palitos cuando armo mi anagrama.</p>
+</blockquote>
+<h2 id="ejemplo-2">Ejemplo</h2>
+<p><img src="/_resources/f9ecc27c6c474c5c992ad394e54adc0d.png" /></p>
+<p>Hay muchos caminos posibles. Para eso simbolizo los caminos</p>
+<p><img src="/_resources/091ae673d50a4eaca78dd89b72c2e53e.png" /></p>
+<p>Veo que para cualquier camino posible lo que hago es reorganizar las letras <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em"></span><span class="mord mathnormal">a</span></span></span></span></span>, <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em"></span><span class="mord mathnormal">i</span></span></span></span></span>. Por lo tanto todos los casos posibles los obtengo usando un anagrama.</p>
+<p><img src="/_resources/0310d9ff97ca4a8c99603fa81ec8be39.png" /></p>
+</div>
+      </article>
+    </div>
+  </body>
+</html>

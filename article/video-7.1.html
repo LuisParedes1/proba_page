@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Video 7.1 - Probabilidad y Estadisticas</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/katex/katex.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">Probabilidad y Estadisticas</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Video 7.1</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1656091734304"
+                  >2022-06-24 14:28</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1656115108416"
+                  >2022-06-24 20:58</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p><a title="https://www.youtube.com/watch?v=-HtCWLAwFh0" href="https://www.youtube.com/watch?v=-HtCWLAwFh0">Video 7.1</a></p>
+<nav class="table-of-contents"><ul><li><a href="#proceso-de-poisson">Proceso de Poisson</a><ul><li><a href="#propiedades">Propiedades</a></li></ul></li><li><a href="#proceso-de-poisson-1">Proceso de Poisson</a><ul><li><a href="#propiedades-1">Propiedades</a></li></ul></li><li><a href="#definicion-g-tiempo-hasta-k-esimo-evento">Definicion “G: Tiempo hasta k-esimo evento”</a></li><li><a href="#ejemplo-1">Ejemplo 1</a><ul><li><a href="#item-a">item a</a></li><li><a href="#item-b">item b</a></li><li><a href="#item-c">item c</a></li></ul></li><li><a href="#ejemplo-2">Ejemplo 2</a><ul><li><a href="#item-a-1">Item a</a></li><li><a href="#item-b-1">item b</a></li><li><a href="#item-c-1">item c</a></li></ul></li></ul></nav><h1 id="proceso-de-poisson">Proceso de Poisson</h1>
+<p><img src="/_resources/37035e7c24374d008732d320fb79b621.png" /></p>
+<p>Ejemplo: Autos llegando a un peaje en el tiempo</p>
+<p>La recta real dice el tiempo y los eventos seria la llegada de los autos al peaje (en horas o min)</p>
+<p>Otro ejemplo: Personas que van llegando a un cajero automatico</p>
+<blockquote>
+<p>Eventos puntuales que seran aleatorios, ubicados sobre una recta real</p>
+</blockquote>
+<p>Llamaremos <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> al numero de eventos durante un intervalo especifico <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mi>t</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,t]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em"></span><span class="mord mathnormal">t</span><span class="mclose">]</span></span></span></span></span></p>
+<h2 id="propiedades">Propiedades</h2>
+<p><img src="/_resources/a615aaf9725a4c75b533cdfa00f7beb1.png" /></p>
+<p><img src="/_resources/f1a03d03abf54eb9869589c39ee0f788.png" /></p>
+<p>Como <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mn>1</mn></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N_1(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> y <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mn>2</mn></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N_2(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> tienen la misma longitud, entonces tienen la misma distribucion de probabilidad</p>
+<p><img src="/_resources/413a402487cc4d1a9cabd176016051ef.png" /></p>
+<p><img src="/_resources/36d1fc0e7762462faa7b8f0871c4b0f2.png" /></p>
+<p>La funcion de probabilidad para <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> se deduce de las 3 propiedades.</p>
+<blockquote>
+<p><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em"></span><span class="mord mathnormal">t</span></span></span></span></span> es la longitud del intervalo sobre el cual esta midiendo la cantidad de eventos</p>
+</blockquote>
+<h1 id="proceso-de-poisson-2">Proceso de Poisson</h1>
+<p>Cada vez que me cuenten que estoy en un proceso de Poisson</p>
+<p>Dibujo la flecha con las marquitas de eventos que representa al Proceso de Poisson
+<img src="/_resources/d49073367b224198b8d28262c82f9ac4.png" /></p>
+<p>Si tenemos una longitud <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em"></span><span class="mord mathnormal">t</span></span></span></span></span> y sobre el mismo contamos la cantidad de eventos que ocurren en ese intervalo, <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span>, entonces se puede decir siempre que esa variable tendra distribucion de Poisson de parametro <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>∗</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">\lambda*t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2222222222222222em"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em"></span></span><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em"></span><span class="mord mathnormal">t</span></span></span></span></span>.</p>
+<div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>∼</mo><mi>P</mi><mi>o</mi><mi>i</mi><mo stretchy="false">(</mo><mi>λ</mi><mo>∗</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(t)\sim Poi(\lambda*t)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mord mathnormal">o</span><span class="mord mathnormal">i</span><span class="mopen">(</span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2222222222222222em"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span></div>
+<p><img src="/_resources/ba8bcd086a914f59a0fb8513cc60ed11.png" /></p>
+<h2 id="propiedades-2">Propiedades</h2>
+<p><img src="/_resources/7bb24498b5b1469e8da474ae23587262.png" /></p>
+<p><img src="/_resources/503dc6d013ec468e9f902a4fdf70b0e2.png" /></p>
+<p><img src="/_resources/b0d2760c3fee42119218e87862b5ae16.png" /></p>
+<p>Si medimos el tiempo entre dos eventos consecutivos en un <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>P</mi><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">PP(\lambda)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">PP</span><span class="mopen">(</span><span class="mord mathnormal">λ</span><span class="mclose">)</span></span></span></span></span>, esta variable tendra distribucion <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varepsilon(\lambda)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">ε</span><span class="mopen">(</span><span class="mord mathnormal">λ</span><span class="mclose">)</span></span></span></span></span></p>
+<h1 id="definicion-g-tiempo-hasta-k-esimo-evento">Definicion “G: Tiempo hasta k-esimo evento”</h1>
+<p><img src="/_resources/554bd0f0f4b641d786cf4130592d99b6.png" /></p>
+<p><img src="/_resources/0684f4f651c74f94ac93a42e62a5e1ee.png" /></p>
+<p>Del 4.16 y 5.17 al sumar variables <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varepsilon(\lambda)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">ε</span><span class="mopen">(</span><span class="mord mathnormal">λ</span><span class="mclose">)</span></span></span></span></span> iid tendremos una distribucion Gamma.</p>
+<p><img src="/_resources/c484d9baaf934f61a024f23400b5dbe5.png" /></p>
+<blockquote>
+<p>El parametro <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em"></span><span class="mord mathnormal">λ</span></span></span></span></span> es el mismo parametro que aparece en las 3 variables.
+Es importante definir la unidad de medida de <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em"></span><span class="mord mathnormal">λ</span></span></span></span></span> porque define como sera el ejercicio (todo en horas, min, seg, pero consistente)</p>
+</blockquote>
+<p><img src="/_resources/b09c9a2272434cdcac0df92c44467611.png" /></p>
+<h1 id="ejemplo-1">Ejemplo 1</h1>
+<p><img src="/_resources/091f5fb0db9b47ce8c54595f7c16ff43.png" /></p>
+<h2 id="item-a">item a</h2>
+<p><img src="/_resources/36a30fd7d9e94cbdbd953ee5cef40aa7.png" /></p>
+<blockquote>
+<p>El proceso de Poisson se genera como sucesion de variables iid <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varepsilon(1/2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">ε</span><span class="mopen">(</span><span class="mord">1/2</span><span class="mclose">)</span></span></span></span></span></p>
+<div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>T</mi><mi>i</mi></msub><mo><mover><mo><mo>∼</mo></mo><mrow><mi>i</mi><mi>i</mi><mi>d</mi></mrow></mover></mo><mi>ε</mi><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">T_i \stackrel{iid}{\sim} \varepsilon(1/2)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.302978em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.152978em"><span style="top:-3em"><span class="pstrut" style="height:3em"></span><span><span class="mop">∼</span></span></span><span style="top:-3.5668699999999998em;margin-left:0em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">ii</span><span class="mord mathnormal mtight">d</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">ε</span><span class="mopen">(</span><span class="mord">1/2</span><span class="mclose">)</span></span></span></span></span></div>
+</blockquote>
+<p><img src="/_resources/1f851e580e714973b4c64a6ef6405bb4.png" /></p>
+<p>Definimos <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> como la cantidad de personas que llegan en 5 minutos. Por lo tanto el tiempo espaciado es de 5 minutos.</p>
+<p>Por ende <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mn>5</mn><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">)</mo><mo>∼</mo><mi>P</mi><mi>P</mi><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>∗</mo><mn>5</mn><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(5min)\sim PP(1/2*5min)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mopen">(</span><span class="mord">5</span><span class="mord mathnormal">min</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">PP</span><span class="mopen">(</span><span class="mord">1/2</span><span class="mspace" style="margin-right:0.2222222222222222em"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">5</span><span class="mord mathnormal">min</span><span class="mclose">)</span></span></span></span></span></p>
+<p><img src="/_resources/06915d0103d44236adfc589af170ffb1.png" /></p>
+<h2 id="item-b">item b</h2>
+<p><img src="/_resources/a2325caa595e4feaa97a7d92882a2b2d.png" /></p>
+<h2 id="item-c">item c</h2>
+<p><img src="/_resources/6755f3307ea34b94ada058252c5013b9.png" /></p>
+<p>El cero lo pongo donde quiero</p>
+<p><img src="/_resources/9ff5ebe4bde7468ea4e5790537dd84d7.png" /></p>
+<h1 id="ejemplo-2">Ejemplo 2</h1>
+<p><img src="/_resources/7a019d1e13cc42b6adbcd9929bbe5556.png" /></p>
+<h2 id="item-a-2">Item a</h2>
+<p><img src="/_resources/0a461a676e824a82b64c645d9607e418.png" /></p>
+<p>Dado que arriban 60 insectos, me piden la cantidad de moscas. Por lo tanto es una variable aleatoria condicionada</p>
+<p><img src="/_resources/2b60c986a90549699e46d6c7b3e51eaf.png" /></p>
+<h2 id="item-b-2">item b</h2>
+<p><img src="/_resources/24a258c6e8ea43118be45a1888d0c330.png" /></p>
+<h2 id="item-c-2">item c</h2>
+<p><img src="/_resources/efaf4f515ad94e91a3b8923aaa83f1e2.png" /></p>
+<p><img src="/_resources/45c31f31358d4a70becf5d2171c84621.png" /></p>
+<p><img src="/_resources/36b56ab2fbf6453e9c16b8746e65194e.png" /></p>
+</div>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Video 12.1 - Probabilidad y Estadisticas</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/katex/katex.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">Probabilidad y Estadisticas</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Video 12.1</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1656283797747"
+                  >2022-06-26 19:49</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1659788603674"
+                  >2022-08-06 09:23</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p><a title="https://www.youtube.com/watch?v=JYR9Mxxz9_w" href="https://www.youtube.com/watch?v=JYR9Mxxz9_w">Video</a></p>
+<nav class="table-of-contents"><ul><li><a href="#estimacion-bayesiana">Estimacion Bayesiana</a></li><li><a href="#ejemplo-1-con-variables-discretas-moneda-harvey-dos-caras">Ejemplo 1 con variables discretas (Moneda Harvey dos caras)</a></li><li><a href="#ejemplo-2-componentes-electronicos-defectuosos">Ejemplo 2 Componentes Electronicos Defectuosos</a></li><li><a href="#ejemplo-3-tiempo-hasta-2da-falla">Ejemplo 3 Tiempo hasta 2da falla</a></li><li><a href="#ejemplo-4-tiempo-entre-fallas">Ejemplo 4 Tiempo entre fallas</a></li><li><a href="#estimacion-de-probabilidades">Estimacion de probabilidades</a></li></ul></nav><h1 id="estimacion-bayesiana">Estimacion Bayesiana</h1>
+<p>El enfoque Bayesiano considera al parametro desconocido como una V.A. (continua o discreta) con funcion de densidad o prob.</p>
+<p><img src="/_resources/2aeb0afa37d34d26bab704d6f9ff72e0.png" /></p>
+<p><img src="/_resources/33975aebc95e4829b4ad914ee2a12aa3.png" /></p>
+<blockquote>
+<p>Usamos la Ley de Bayes</p>
+</blockquote>
+<p><img src="/_resources/2345e52ab44c44709bcf927de9b2a962.png" /></p>
+<p>Dado una distribucion a priori, un estimador de Bayes va a ser el que minimice el riesgo de Bayes.</p>
+<p><img src="/_resources/7f236ac5d1b8474fa35604659b77e83c.png" /></p>
+<h1 id="ejemplo-1-con-variables-discretas-moneda-harvey-dos-caras">Ejemplo 1 con variables discretas (Moneda Harvey dos caras)</h1>
+<p><img src="/_resources/b7f3c48616ef40b18e70b1e96f9dffba.png" /></p>
+<p><img src="/_resources/38ea0cd7c3384bb79ea28192f15e69f8.png" /></p>
+<p><img src="/_resources/ed015747b03e428d8b98a45318f8e1c7.png" /></p>
+<blockquote>
+<p>El hecho de conocer algo que ocurre en el experimento modifica las probabilidades de que algo ocurra.</p>
+</blockquote>
+<h1 id="ejemplo-2-componentes-electronicos-defectuosos">Ejemplo 2 Componentes Electronicos Defectuosos</h1>
+<p><img src="/_resources/e4569d4c54c248bd88a86cee3fb4f61c.png" /></p>
+<p><img src="/_resources/0e7c496bbdcb485f8c4abf2ccf2da276.png" /></p>
+<p><img src="/_resources/d4585ddf8db343ea9968639eb33f6917.png" /></p>
+<p>Digo que la funcion es proporcional y me las ingenio para no hacer la integral molesta</p>
+<p><img src="/_resources/aafe46889bcd415fb2c8a1ba355a88f6.png" /></p>
+<p><img src="/_resources/7881012956894520960359f4a1135e1c.png" /></p>
+<p>La constante <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span></span></span></span></span> lo saco de la tabla de la distribucion Beta</p>
+<p><img src="/_resources/f1d6ca7422cd434aa2ccac0130174bf8.png" /></p>
+<p>Calculo la esperanza de la Beta para hallar la funcion de regresion (evaluado en X grande)</p>
+<p>Obtengo el estimador de Bayes para el parametro de una Bernoulli
+(Estoy haciendo lo mismo que el EMV pero con un enfoque Bayesiano)</p>
+<p><img src="/_resources/a94c0fc7ecd84dc991c8e3a62ad9a02b.png" /></p>
+<p>El estimador de Bayes es un promedio ponderado entre mi EMV y la esperanza de la distribucion a priori que elegi para mi parametro desconocido.</p>
+<p>Si n tiende a infinito el EMV tiene mucho mas peso de lo que espero de <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span></span> a priori. Si n es muy grande va a coinicidir con el EMV pero en general usamos estimacion Bayesiana cuando tenemos muestras pequeñas.</p>
+<p><img src="/_resources/ffa2dbda20c746d2b456fb056e816804.png" /></p>
+<h1 id="ejemplo-3-tiempo-hasta-2da-falla">Ejemplo 3 Tiempo hasta 2da falla</h1>
+<p><img src="/_resources/d188a6a02a074c288d0cd65419d55b4f.png" /></p>
+<p><img src="/_resources/2d14079708d74bcdb862b415a0ca717e.png" /></p>
+<p><img src="/_resources/6e587e5ac40740dd81fe6104e3870f0e.png" /></p>
+<p><img src="/_resources/6081130fd48d4b6a986c5e0ffc547e18.png" /></p>
+<h1 id="ejemplo-4-tiempo-entre-fallas">Ejemplo 4 Tiempo entre fallas</h1>
+<p><img src="/_resources/9d8150b052894046a9599b6d682d2e6b.png" /></p>
+<p><img src="/_resources/2bfced58701a4c71b0e911b102a5168f.png" /></p>
+<p><img src="/_resources/c9986b6057ec405dabde3bf785b1e9f3.png" /></p>
+<h1 id="estimacion-de-probabilidades">Estimacion de probabilidades</h1>
+<p>Para poder estimar prob a partir de las distribuciones a posteriori de los parametros aleatorios usaremos siempre la formula de prob total.</p>
+<p><img src="/_resources/3f3ae64802d748b3b32309b1a56c6d2f.png" /></p>
+<p><img src="/_resources/fb1fa6d6d5eb4f8eb497c548107d9502.png" /></p>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
